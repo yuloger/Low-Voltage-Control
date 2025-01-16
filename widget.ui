@@ -1167,7 +1167,7 @@
             <x>10</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1178,75 +1178,63 @@
           <property name="title">
            <string>Channel1</string>
           </property>
-          <widget class="QChartView" name="graphicsView_17" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_2">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_43">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_2">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_3">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_44">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_17" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_8">
           <property name="geometry">
@@ -1254,7 +1242,7 @@
             <x>370</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1265,77 +1253,65 @@
           <property name="title">
            <string>Channel2</string>
           </property>
-          <widget class="QChartView" name="graphicsView_18" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_3">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_6">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_48">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_4">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_7">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_49">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_6">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_7">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_49">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_18" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_9">
           <property name="geometry">
            <rect>
             <x>730</x>
             <y>0</y>
-            <width>341</width>
-            <height>241</height>
+            <width>350</width>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1346,69 +1322,57 @@
           <property name="title">
            <string>Channel3</string>
           </property>
-          <widget class="QChartView" name="graphicsView_19" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_6">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_8">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_13">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_54">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_7">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_14">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_55">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_13">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_54">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_14">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_55">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_19" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="Line" name="line">
           <property name="geometry">
@@ -1447,7 +1411,7 @@
             <x>10</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1458,69 +1422,57 @@
           <property name="title">
            <string>Channel4</string>
           </property>
-          <widget class="QChartView" name="graphicsView_23" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_7">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_13">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_15">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_61">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_8">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_16">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_62">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_15">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_61">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_8">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_16">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_62">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_23" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_18">
           <property name="geometry">
@@ -1528,7 +1480,7 @@
             <x>370</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1539,77 +1491,65 @@
           <property name="title">
            <string>Channel5</string>
           </property>
-          <widget class="QChartView" name="graphicsView_24" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_8">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_14">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_17">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_63">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_13">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_18">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_64">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_17">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_63">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_13">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_18">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_64">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_24" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_19">
           <property name="geometry">
            <rect>
             <x>730</x>
             <y>0</y>
-            <width>341</width>
-            <height>241</height>
+            <width>350</width>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1620,69 +1560,57 @@
           <property name="title">
            <string>Channel6</string>
           </property>
-          <widget class="QChartView" name="graphicsView_25" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_9">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_15">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_19">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_65">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_14">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_20">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_66">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_19">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_65">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_14">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_20">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_66">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_25" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="Line" name="line_12">
           <property name="geometry">
@@ -1721,7 +1649,7 @@
             <x>10</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1732,69 +1660,57 @@
           <property name="title">
            <string>Channel7</string>
           </property>
-          <widget class="QChartView" name="graphicsView_21" native="true">
-           <property name="geometry">
-            <rect>
-             <x>11</x>
-             <y>71</y>
-             <width>320</width>
-             <height>160</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_10">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_10">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_21">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_56">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_10">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_22">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_57">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_21">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_10">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_22">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_57">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_21" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_12">
           <property name="geometry">
@@ -1802,7 +1718,7 @@
             <x>370</x>
             <y>0</y>
             <width>341</width>
-            <height>241</height>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1813,77 +1729,65 @@
           <property name="title">
            <string>Channel8</string>
           </property>
-          <widget class="QChartView" name="graphicsView_22" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_11">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_11">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_23">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_58">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_11">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_24">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_67">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_23">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_11">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_24">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_22" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QGroupBox" name="groupBox_13">
           <property name="geometry">
            <rect>
             <x>730</x>
             <y>0</y>
-            <width>341</width>
-            <height>241</height>
+            <width>350</width>
+            <height>245</height>
            </rect>
           </property>
           <property name="font">
@@ -1894,69 +1798,57 @@
           <property name="title">
            <string>Channel9</string>
           </property>
-          <widget class="QChartView" name="graphicsView_26" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_12">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_16">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_25">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_68">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_15">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_26">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_69">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_25">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_68">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_15">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_26">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_26" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="Line" name="line_24">
           <property name="geometry">
@@ -2025,65 +1917,53 @@
             <property name="title">
              <string>Channel10</string>
             </property>
-            <widget class="QChartView" name="graphicsView_28" native="true">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>70</y>
-               <width>321</width>
-               <height>161</height>
-              </rect>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>320</width>
-               <height>160</height>
-              </size>
-             </property>
-            </widget>
-            <widget class="QWidget" name="horizontalLayoutWidget_13">
-             <property name="geometry">
-              <rect>
-               <x>20</x>
-               <y>30</y>
-               <width>301</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_17">
-              <item>
-               <widget class="QLineEdit" name="lineEdit_27">
-                <property name="readOnly">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_70">
-                <property name="text">
-                 <string>V</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="Line" name="line_16">
-                <property name="orientation">
-                 <enum>Qt::Orientation::Vertical</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_28"/>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_71">
-                <property name="text">
-                 <string>A</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_27">
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_70">
+                 <property name="text">
+                  <string>V</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="Line" name="line_16">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_28"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_71">
+                 <property name="text">
+                  <string>A</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QChartView" name="graphicsView_28" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>320</width>
+                 <height>160</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
           <item>
