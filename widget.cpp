@@ -1,11 +1,11 @@
 #include "widget.h"
-#include "ui_widget.h"
-#include "modbusrtu.h"
 
 #include <QVBoxLayout>
 #include <QSerialPortInfo>
 #include <QDateTime>
 #include <QDebug>
+
+#include "ui_widget.h"
 
 QTextBrowser *Widget::logBrowser = nullptr;
 
