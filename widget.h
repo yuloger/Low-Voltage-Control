@@ -62,7 +62,7 @@ private:
     bool isActivated;
     static QTextBrowser *logBrowser;
 };
-#endif // WIDGET_H
+#endif
 
 
 
