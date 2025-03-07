@@ -1,11 +1,11 @@
 #include "widget.h"
-#include "ui_widget.h"
-#include "modbusrtu.h"
 
 #include <QVBoxLayout>
 #include <QSerialPortInfo>
 #include <QDateTime>
 #include <QDebug>
+
+#include "ui_widget.h"
 
 QTextBrowser *Widget::logBrowser = nullptr;
 
@@ -94,16 +94,16 @@ Widget::Widget(QWidget *parent)
     connect(ui->buttonConnect, &QPushButton::clicked, this, &Widget::onConnectButtonClicked);
 
     // 电源开关按钮
-    connect(ui->checkBoxPower_10, &QCheckBox::stateChanged, this, &Widget::onPower10CheckBoxChanged);
-    connect(ui->checkBoxPower_1, &QCheckBox::stateChanged, this, &Widget::onPower1CheckBoxChanged);
-    connect(ui->checkBoxPower_2, &QCheckBox::stateChanged, this, &Widget::onPower2CheckBoxChanged);
-    connect(ui->checkBoxPower_3, &QCheckBox::stateChanged, this, &Widget::onPower3CheckBoxChanged);
-    connect(ui->checkBoxPower_4, &QCheckBox::stateChanged, this, &Widget::onPower4CheckBoxChanged);
-    connect(ui->checkBoxPower_5, &QCheckBox::stateChanged, this, &Widget::onPower5CheckBoxChanged);
-    connect(ui->checkBoxPower_6, &QCheckBox::stateChanged, this, &Widget::onPower6CheckBoxChanged);
-    connect(ui->checkBoxPower_7, &QCheckBox::stateChanged, this, &Widget::onPower7CheckBoxChanged);
-    connect(ui->checkBoxPower_8, &QCheckBox::stateChanged, this, &Widget::onPower8CheckBoxChanged);
-    connect(ui->checkBoxPower_9, &QCheckBox::stateChanged, this, &Widget::onPower9CheckBoxChanged);
+    connect(ui->checkBoxPower_10, &QCheckBox::checkStateChanged, this, &Widget::onPower10CheckBoxChanged);
+    connect(ui->checkBoxPower_1, &QCheckBox::checkStateChanged, this, &Widget::onPower1CheckBoxChanged);
+    connect(ui->checkBoxPower_2, &QCheckBox::checkStateChanged, this, &Widget::onPower2CheckBoxChanged);
+    connect(ui->checkBoxPower_3, &QCheckBox::checkStateChanged, this, &Widget::onPower3CheckBoxChanged);
+    connect(ui->checkBoxPower_4, &QCheckBox::checkStateChanged, this, &Widget::onPower4CheckBoxChanged);
+    connect(ui->checkBoxPower_5, &QCheckBox::checkStateChanged, this, &Widget::onPower5CheckBoxChanged);
+    connect(ui->checkBoxPower_6, &QCheckBox::checkStateChanged, this, &Widget::onPower6CheckBoxChanged);
+    connect(ui->checkBoxPower_7, &QCheckBox::checkStateChanged, this, &Widget::onPower7CheckBoxChanged);
+    connect(ui->checkBoxPower_8, &QCheckBox::checkStateChanged, this, &Widget::onPower8CheckBoxChanged);
+    connect(ui->checkBoxPower_9, &QCheckBox::checkStateChanged, this, &Widget::onPower9CheckBoxChanged);
 
     // 从机地址
     connect(ui->spinBoxSlaveAddress, &QSpinBox::valueChanged, this, &Widget::onSlaveAddressChanged);

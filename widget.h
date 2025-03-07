@@ -1,12 +1,12 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
-#include "qledindicator.h"
-#include "modbusrtu.h"
-
 #include <QWidget>
 #include <QTextBrowser>
 #include <QLoggingCategory>
+
+#include "qledindicator.h"
+#include "modbusrtu.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -62,7 +62,7 @@ private:
     bool isActivated;
     static QTextBrowser *logBrowser;
 };
-#endif // WIDGET_H
+#endif
 
 
 

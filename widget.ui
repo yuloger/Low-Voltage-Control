@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1164</width>
-    <height>1007</height>
+    <width>1154</width>
+    <height>1011</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,11 +19,15 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/images/battery.png</normaloff>:/icons/images/battery.png</iconset>
+  </property>
   <property name="accessibleName">
    <string/>
   </property>
-  <layout class="QGridLayout" name="gridLayout_2">
-   <item row="0" column="0" colspan="5">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="4">
     <widget class="QLabel" name="label_33">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -39,8 +43,10 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>22</pointsize>
-       <bold>true</bold>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
@@ -51,7 +57,1889 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="0" rowspan="2" colspan="2">
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>530</width>
+       <height>490</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>530</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>   通道1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_1">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lineEditPower1Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLineEdit" name="lineEditPower1Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QWidget" name="ledIndicator_1" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>指示灯1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>   通道2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_2">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="lineEditPower2Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="lineEditPower2Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QWidget" name="ledIndicator_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>指示灯2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>   通道3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_3">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="lineEditPower3Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLineEdit" name="lineEditPower3Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QWidget" name="ledIndicator_3" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>指示灯3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>   通道4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_4">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="lineEditPower4Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLineEdit" name="lineEditPower4Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="6">
+       <widget class="QWidget" name="ledIndicator_4" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="7">
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>指示灯4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>   通道5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_5">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="lineEditPower5Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLineEdit" name="lineEditPower5Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QWidget" name="ledIndicator_5" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="7">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>指示灯5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>   通道6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_6">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="lineEditPower6Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QLineEdit" name="lineEditPower6Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="5">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="6">
+       <widget class="QWidget" name="ledIndicator_6" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="7">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>指示灯6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>   通道7</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_7">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLineEdit" name="lineEditPower7Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QLineEdit" name="lineEditPower7Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="6">
+       <widget class="QWidget" name="ledIndicator_7" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="7">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>指示灯7</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>   通道8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_8">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="lineEditPower8Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <widget class="QLineEdit" name="lineEditPower8Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="5">
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="6">
+       <widget class="QWidget" name="ledIndicator_8" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="7">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>指示灯8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>   通道9</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_9">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLineEdit" name="lineEditPower9Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QLabel" name="label_32">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="4">
+       <widget class="QLineEdit" name="lineEditPower9Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="5">
+       <widget class="QLabel" name="label_41">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="6">
+       <widget class="QWidget" name="ledIndicator_9" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="7">
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string>指示灯9</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_59">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>   通道10</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QCheckBox" name="checkBoxPower_10">
+        <property name="text">
+         <string>开/关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QLineEdit" name="lineEditPower10Voltage">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="3">
+       <widget class="QLabel" name="label_60">
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="4">
+       <widget class="QLineEdit" name="lineEditPower10Current">
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="5">
+       <widget class="QLabel" name="label_46">
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="6">
+       <widget class="QWidget" name="ledIndicator_10" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="7">
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string>指示灯10</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>590</width>
+       <height>490</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>590</width>
+       <height>490</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>日志</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>262</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButtonClearLogs">
+        <property name="text">
+         <string>清除</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QTextBrowser" name="textBrowserLogs"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <spacer name="horizontalSpacer_8">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" colspan="4">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1128</width>
+       <height>320</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1128</width>
+       <height>330</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>  电压&amp;&amp; 电流</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>通道1~3</string>
+         </attribute>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel1</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_17" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel2</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_6">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_7">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_49">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_18" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>0</y>
+            <width>350</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel3</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_13">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_54">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_14">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_55">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_19" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="Line" name="line">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_9">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>通道4~6</string>
+         </attribute>
+         <widget class="QGroupBox" name="groupBox_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel4</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_15">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_61">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_8">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_16">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_62">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_23" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_18">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel5</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_17">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_63">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_13">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_18">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_64">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_24" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_19">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>0</y>
+            <width>350</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel6</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_19">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_65">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_14">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_20">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_66">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_25" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="Line" name="line_12">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_23">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>通道7~9</string>
+         </attribute>
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel7</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_21">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_10">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_22">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_57">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_21" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>0</y>
+            <width>341</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel8</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_23">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_11">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_24">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_22" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_13">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>0</y>
+            <width>350</width>
+            <height>245</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Channel9</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_25">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_68">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_15">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_26">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QChartView" name="graphicsView_26" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>160</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="Line" name="line_24">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_27">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>20</y>
+            <width>20</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>通道10</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>338</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_15">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>340</width>
+              <height>240</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei UI</family>
+              <pointsize>11</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>Channel10</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_27">
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_70">
+                 <property name="text">
+                  <string>V</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="Line" name="line_16">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_28"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_71">
+                 <property name="text">
+                  <string>A</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QChartView" name="graphicsView_28" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>320</width>
+                 <height>160</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>338</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <spacer name="horizontalSpacer_12">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>17</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>717</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="lineEdit_41">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>210</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>见微科仪（安徽）技术有限公司</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QLabel" name="label_34">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Version :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="4">
+    <spacer name="horizontalSpacer_13">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="4">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="enabled">
       <bool>true</bool>
@@ -70,13 +1958,15 @@
      </property>
      <property name="maximumSize">
       <size>
-       <width>580</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="font">
       <font>
-       <pointsize>13</pointsize>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
        <bold>false</bold>
       </font>
      </property>
@@ -155,6 +2045,19 @@
        </widget>
       </item>
       <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <widget class="QPushButton" name="pushButtonActivate">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -179,6 +2082,25 @@
         </property>
         <property name="checkable">
          <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonClose">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>关闭</string>
         </property>
        </widget>
       </item>
@@ -217,7 +2139,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>80</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -226,2009 +2148,33 @@
         </property>
        </widget>
       </item>
-     </layout>
-    </widget>
-   </item>
-   <item row="2" column="2" colspan="3">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="3" column="0" rowspan="2">
-    <widget class="QGroupBox" name="groupBox_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>530</width>
-       <height>490</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>530</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>13</pointsize>
-      </font>
-     </property>
-     <property name="title">
-      <string>设置</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
-       <widget class="QTabWidget" name="tabWidget_2">
+      <item>
+       <widget class="QPushButton" name="pushButtonSave">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="minimumSize">
          <size>
-          <width>360</width>
+          <width>80</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
+          <width>80</width>
           <height>16777215</height>
          </size>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="currentIndex">
-         <number>0</number>
-        </property>
-        <widget class="QWidget" name="tab_3">
-         <attribute name="title">
-          <string>dec</string>
-         </attribute>
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="5" column="2">
-           <widget class="QLineEdit" name="lineEditPower6Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="4">
-           <widget class="QLineEdit" name="lineEditPower7Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="7">
-           <widget class="QLabel" name="label_35">
-            <property name="text">
-             <string>指示灯5</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="7">
-           <widget class="QLabel" name="label_22">
-            <property name="text">
-             <string>指示灯2</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="4">
-           <widget class="QLineEdit" name="lineEditPower1Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_6">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="2">
-           <widget class="QLineEdit" name="lineEditPower10Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <widget class="QLineEdit" name="lineEditPower2Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_5">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="3">
-           <widget class="QLabel" name="label_27">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="4">
-           <widget class="QLineEdit" name="lineEditPower8Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_7">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="3">
-           <widget class="QLabel" name="label_60">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_1">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="4">
-           <widget class="QLineEdit" name="lineEditPower3Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="7">
-           <widget class="QLabel" name="label_38">
-            <property name="text">
-             <string>指示灯8</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="QLabel" name="label_30">
-            <property name="text">
-             <string>   通道8</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_2">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="6">
-           <widget class="QWidget" name="ledIndicator_5" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QLineEdit" name="lineEditPower3Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="7">
-           <widget class="QLabel" name="label_39">
-            <property name="text">
-             <string>指示灯9</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="2">
-           <widget class="QLineEdit" name="lineEditPower8Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>   通道1</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="3">
-           <widget class="QLabel" name="label_17">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="7">
-           <widget class="QLabel" name="label_23">
-            <property name="text">
-             <string>指示灯3</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="5">
-           <widget class="QLabel" name="label_13">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="4">
-           <widget class="QLineEdit" name="lineEditPower10Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QLineEdit" name="lineEditPower5Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="6">
-           <widget class="QWidget" name="ledIndicator_1" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="2">
-           <widget class="QLineEdit" name="lineEditPower9Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="3">
-           <widget class="QLabel" name="label_9">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_29">
-            <property name="text">
-             <string>   通道5</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="6">
-           <widget class="QWidget" name="ledIndicator_3" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="6">
-           <widget class="QWidget" name="ledIndicator_10" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QLineEdit" name="lineEditPower1Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="3">
-           <widget class="QLabel" name="label_10">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_8">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="4">
-           <widget class="QLineEdit" name="lineEditPower5Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3">
-           <widget class="QLabel" name="label_8">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="5">
-           <widget class="QLabel" name="label_15">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="6">
-           <widget class="QWidget" name="ledIndicator_7" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="0">
-           <widget class="QLabel" name="label_31">
-            <property name="text">
-             <string>   通道9</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_10">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="7">
-           <widget class="QLabel" name="label_37">
-            <property name="text">
-             <string>指示灯7</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_9">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="4">
-           <widget class="QLineEdit" name="lineEditPower4Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="6">
-           <widget class="QWidget" name="ledIndicator_4" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>   通道4</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="6">
-           <widget class="QWidget" name="ledIndicator_6" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_3">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="4">
-           <widget class="QLineEdit" name="lineEditPower9Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="3">
-           <widget class="QLabel" name="label_16">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="5">
-           <widget class="QLabel" name="label_11">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="7">
-           <widget class="QLabel" name="label_21">
-            <property name="text">
-             <string>指示灯1</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="5">
-           <widget class="QLabel" name="label_14">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="3">
-           <widget class="QLabel" name="label_28">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_2">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>   通道2</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="5">
-           <widget class="QLabel" name="label_12">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_3">
-            <property name="text">
-             <string>   通道3</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="QLineEdit" name="lineEditPower7Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="7">
-           <widget class="QLabel" name="label_40">
-            <property name="text">
-             <string>指示灯10</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QCheckBox" name="checkBoxPower_4">
-            <property name="text">
-             <string>开/关</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QLabel" name="label_19">
-            <property name="text">
-             <string>   通道7</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="4">
-           <widget class="QLineEdit" name="lineEditPower6Current">
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="6">
-           <widget class="QWidget" name="ledIndicator_9" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="7">
-           <widget class="QLabel" name="label_24">
-            <property name="text">
-             <string>指示灯4</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <widget class="QWidget" name="ledIndicator_2" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="label_18">
-            <property name="text">
-             <string>   通道6</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="7">
-           <widget class="QLabel" name="label_36">
-            <property name="text">
-             <string>指示灯6</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QLineEdit" name="lineEditPower4Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="3">
-           <widget class="QLabel" name="label_32">
-            <property name="text">
-             <string>V</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="0">
-           <widget class="QLabel" name="label_59">
-            <property name="minimumSize">
-             <size>
-              <width>70</width>
-              <height>16</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>   通道10</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QLineEdit" name="lineEditPower2Voltage">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="6">
-           <widget class="QWidget" name="ledIndicator_8" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="5">
-           <widget class="QLabel" name="label_20">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="5">
-           <widget class="QLabel" name="label_25">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="5">
-           <widget class="QLabel" name="label_26">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="5">
-           <widget class="QLabel" name="label_41">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="5">
-           <widget class="QLabel" name="label_46">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item row="3" column="1" rowspan="2" colspan="4">
-    <widget class="QGroupBox" name="groupBox_6">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>590</width>
-       <height>490</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>590</width>
-       <height>490</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>13</pointsize>
-      </font>
-     </property>
-     <property name="title">
-      <string>日志</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_5">
-      <item row="0" column="0" colspan="2">
-       <widget class="QTextBrowser" name="textBrowserLogs"/>
-      </item>
-      <item row="1" column="0">
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Orientation::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>262</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="pushButtonClearLogs">
         <property name="text">
-         <string>清除</string>
+         <string>保存</string>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-   </item>
-   <item row="4" column="5">
-    <spacer name="horizontalSpacer_8">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="5" column="0" rowspan="2" colspan="5">
-    <widget class="QGroupBox" name="groupBox_4">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>1128</width>
-       <height>320</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>1128</width>
-       <height>330</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>13</pointsize>
-      </font>
-     </property>
-     <property name="title">
-      <string>  电压&amp;&amp; 电流</string>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_12">
-      <item>
-       <widget class="QTabWidget" name="tabWidget">
-        <property name="currentIndex">
-         <number>0</number>
-        </property>
-        <widget class="QWidget" name="tab">
-         <attribute name="title">
-          <string>通道1~3</string>
-         </attribute>
-         <widget class="QGroupBox" name="groupBox_7">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel1</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_17" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_2">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_43">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_2">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_3">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_44">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_8">
-          <property name="geometry">
-           <rect>
-            <x>370</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel2</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_18" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_3">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_6">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_48">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_4">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_7">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_49">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_9">
-          <property name="geometry">
-           <rect>
-            <x>730</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel3</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_19" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_6">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_8">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_13">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_54">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_7">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_14">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_55">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="Line" name="line">
-          <property name="geometry">
-           <rect>
-            <x>350</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-         <widget class="Line" name="line_9">
-          <property name="geometry">
-           <rect>
-            <x>710</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tab_6">
-         <attribute name="title">
-          <string>通道4~6</string>
-         </attribute>
-         <widget class="QGroupBox" name="groupBox_17">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel4</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_23" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_7">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_13">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_15">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_61">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_8">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_16">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_62">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_18">
-          <property name="geometry">
-           <rect>
-            <x>370</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel5</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_24" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_8">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_14">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_17">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_63">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_13">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_18">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_64">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_19">
-          <property name="geometry">
-           <rect>
-            <x>730</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel6</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_25" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_9">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_15">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_19">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_65">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_14">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_20">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_66">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="Line" name="line_12">
-          <property name="geometry">
-           <rect>
-            <x>350</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-         <widget class="Line" name="line_23">
-          <property name="geometry">
-           <rect>
-            <x>710</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tab_5">
-         <attribute name="title">
-          <string>通道7~9</string>
-         </attribute>
-         <widget class="QGroupBox" name="groupBox_11">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel7</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_21" native="true">
-           <property name="geometry">
-            <rect>
-             <x>11</x>
-             <y>71</y>
-             <width>320</width>
-             <height>160</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_10">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_10">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_21">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_56">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_10">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_22">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_57">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_12">
-          <property name="geometry">
-           <rect>
-            <x>370</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel8</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_22" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_11">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_11">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_23">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_58">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_11">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_24">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_67">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_13">
-          <property name="geometry">
-           <rect>
-            <x>730</x>
-            <y>0</y>
-            <width>341</width>
-            <height>241</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Channel9</string>
-          </property>
-          <widget class="QChartView" name="graphicsView_26" native="true">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>70</y>
-             <width>321</width>
-             <height>161</height>
-            </rect>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>160</height>
-            </size>
-           </property>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_12">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>301</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_16">
-            <item>
-             <widget class="QLineEdit" name="lineEdit_25">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_68">
-              <property name="text">
-               <string>V</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="Line" name="line_15">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_26">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_69">
-              <property name="text">
-               <string>A</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-         <widget class="Line" name="line_24">
-          <property name="geometry">
-           <rect>
-            <x>350</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-         <widget class="Line" name="line_27">
-          <property name="geometry">
-           <rect>
-            <x>710</x>
-            <y>20</y>
-            <width>20</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tab_2">
-         <attribute name="title">
-          <string>通道10</string>
-         </attribute>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <spacer name="horizontalSpacer_10">
-            <property name="orientation">
-             <enum>Qt::Orientation::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>338</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>340</width>
-              <height>240</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>13</pointsize>
-             </font>
-            </property>
-            <property name="title">
-             <string>Channel10</string>
-            </property>
-            <widget class="QChartView" name="graphicsView_28" native="true">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>70</y>
-               <width>321</width>
-               <height>161</height>
-              </rect>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>320</width>
-               <height>160</height>
-              </size>
-             </property>
-            </widget>
-            <widget class="QWidget" name="horizontalLayoutWidget_13">
-             <property name="geometry">
-              <rect>
-               <x>20</x>
-               <y>30</y>
-               <width>301</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_17">
-              <item>
-               <widget class="QLineEdit" name="lineEdit_27">
-                <property name="readOnly">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_70">
-                <property name="text">
-                 <string>V</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="Line" name="line_16">
-                <property name="orientation">
-                 <enum>Qt::Orientation::Vertical</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_28"/>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_71">
-                <property name="text">
-                 <string>A</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_11">
-            <property name="orientation">
-             <enum>Qt::Orientation::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>338</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item row="6" column="5">
-    <spacer name="horizontalSpacer_12">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>17</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="7" column="0" colspan="3">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>717</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="7" column="3">
-    <widget class="QLineEdit" name="lineEdit_41">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>210</width>
-       <height>20</height>
-      </size>
-     </property>
-     <property name="mouseTracking">
-      <bool>false</bool>
-     </property>
-     <property name="text">
-      <string>见微科仪（安徽）技术有限公司</string>
-     </property>
-     <property name="frame">
-      <bool>false</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="4">
-    <layout class="QHBoxLayout" name="horizontalLayout_9">
-     <item>
-      <widget class="QLabel" name="label_34">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Version :</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_9">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>100</width>
-         <height>16777215</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="7" column="5">
-    <spacer name="horizontalSpacer_13">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
    </item>
   </layout>
  </widget>
@@ -2239,6 +2185,8 @@
    <header>qchartview.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

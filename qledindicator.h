@@ -20,4 +20,4 @@ private:
     bool isOn;
 };
 
-#endif // QLEDINDICATOR_H
+#endif
